@@ -1,16 +1,17 @@
 
 const problems = [];
 
+
 document.getElementById('problemForm').addEventListener('submit', function (event) {
     event.preventDefault();
     
     const problem = document.getElementById('problem').value;
     const location = document.getElementById('location').value;
     
-   
+  
     problems.push({ problem, location });
     
- 
+   
     document.getElementById('problemForm').reset();
     
     
@@ -29,6 +30,7 @@ function updateSolutionList() {
     });
 }
 
+
 function initMap() {
     const map = L.map('map').setView([-18.973, 35.529], 6); 
 
@@ -36,9 +38,9 @@ function initMap() {
         maxZoom: 19,
     }).addTo(map);
 
-   
+  
     problems.forEach(item => {
-        L.marker([-18.973, 35.529]) /
+        L.marker([-18.973, 35.529]) 
             .addTo(map)
             .bindPopup(item.problem);
     });
