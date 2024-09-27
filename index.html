@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MozCon</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Moçambique Conectado</h1>
+        <p>Conectando comunidades e soluções</p>
+        <span></span>
+    </header>
+
+    <main>
+        <section id="problemSection">
+            <h2>Compartilhe seu Problema</h2>
+            <form id="problemForm">
+                <input type="text" id="problem" placeholder="Descreva o problema" required>
+                <input type="text" id="location" placeholder="Localização" required>
+                <button type="submit">Enviar Problema</button>
+            </form>
+        </section>
+
+        <section id="solutionSection">
+            <h2>Soluções Sugeridas</h2>
+            <ul id="solutionList"></ul>
+        </section>
+
+        <section id="mapSection">
+            <h2>Mapa de Iniciativas</h2>
+            <div id="map"></div>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>

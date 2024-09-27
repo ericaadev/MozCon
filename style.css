@@ -1,0 +1,125 @@
+
+:root {
+  --green: #00843D;
+  --black: #000000;
+  --yellow: #FFD100;
+  --red: #ff0000;
+  --white: #FFFFFF;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: var(--white);
+  color: var(--black);
+}
+
+header {
+  background-color: var(--green);
+  color: var(--white);
+  padding: 20px;
+  text-align: center;
+  border-bottom: 3px solid var(--black);
+}
+
+header h1 {
+  margin: 0;
+  font-size: 2.5em;
+}
+
+header p {
+  font-size: 1.2em;
+  margin-top: 5px;
+}
+
+main {
+  padding: 20px;
+}
+
+h2 {
+  margin-top: 30px;
+  color: var(--green);
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  background-color: transparent;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+form input, form button {
+  padding: 10px;
+  font-size: 1em;
+  border-radius: 5px;
+}
+
+input {
+  background-color: var(--white);
+  color: var(--black);
+}
+
+input::placeholder {
+  color: var(--black);
+}
+
+button {
+  background-color: var(--green);
+  color: var(--white);
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: var(--yellow);
+  color: var(--black);
+}
+
+#solutionSection {
+  margin-top: 50px;
+}
+
+#solutionList {
+  list-style-type: none;
+  padding: 0;
+}
+
+#solutionList li {
+  background-color: var(--yellow);
+  padding: 15px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  color: var(--black);
+  font-weight: bold;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+#mapSection {
+  margin-top: 50px;
+}
+
+#map {
+  height: 300px;
+  width: 100%;
+  border: 3px solid var(--red);
+  border-radius: 10px;
+}
+
+
+@media (max-width: 768px) {
+  header h1 {
+      font-size: 2em;
+  }
+
+  form, #mapSection, #solutionSection {
+      padding: 15px;
+  }
+
+  input, button {
+      font-size: 0.9em;
+  }
+}
